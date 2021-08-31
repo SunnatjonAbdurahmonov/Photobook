@@ -1,0 +1,999 @@
+@font-face {
+  font-family: "PF Agora Sans Pro";
+  src: url("//db.onlinewebfonts.com/t/2ba1b779cce04554e9ff3ba58b996b69.eot");
+  src: url("//db.onlinewebfonts.com/t/2ba1b779cce04554e9ff3ba58b996b69.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/2ba1b779cce04554e9ff3ba58b996b69.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/2ba1b779cce04554e9ff3ba58b996b69.woff") format("woff"), url("//db.onlinewebfonts.com/t/2ba1b779cce04554e9ff3ba58b996b69.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/2ba1b779cce04554e9ff3ba58b996b69.svg#PF Agora Sans Pro") format("svg");
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url("../css/fonts/MyriadProRegular.eot");
+  src: url("../css/fonts/MyriadProRegular.eot?#iefix") format("embedded-opentype"), url("../css/fonts/MyriadProRegular.woff") format("woff"), url("../css/fonts/MyriadProRegular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.container-fluid {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block;
+}
+.container-fluid .row {
+  width: 100%;
+}
+.container-fluid .row .change {
+  transition: all 0.3s ease;
+}
+.container-fluid .row .change .line-1 {
+  transform: rotateZ(-405deg) translate(-4px, 6px);
+}
+.container-fluid .row .change .line-2 {
+  opacity: 0;
+  transform: rotateZ(-600deg);
+}
+.container-fluid .row .change .line-3 {
+  transform: rotateZ(405deg) translate(-5px, -6px);
+}
+.container-fluid .row .change .navbars {
+  opacity: 1;
+  transform: translateX(0);
+}
+.container-fluid .row .navbars {
+  opacity: 0;
+  transform: translateX(-210px);
+  transition: all 0.8s ease;
+}
+.container-fluid .row .navbars .phone {
+  width: 211px;
+  height: 37px;
+  background-color: #ffd200;
+  border-radius: 10px;
+  margin-left: 20px;
+  text-align: center;
+}
+.container-fluid .row .navbars .phone span {
+  width: 70%;
+  height: 100%;
+  display: inline-block;
+  border-bottom: 2px dotted;
+}
+.container-fluid .row .navbars .sign-in {
+  margin-left: 40px;
+}
+.container-fluid .row .navbars .sign-in .fa-sign-in {
+  font-size: 25px;
+}
+.container-fluid .row .navbars img {
+  width: 24px;
+}
+.container-fluid .row .navbar {
+  height: 80px;
+  padding: 20px 160px;
+}
+.container-fluid .row .navbar .hamburger-menu {
+  width: 25px;
+  height: 18px;
+  margin: 10px 30px 0 0;
+  cursor: pointer;
+}
+.container-fluid .row .navbar .hamburger-menu .line {
+  width: 100%;
+  height: 1px;
+  background: #3E3A3B;
+  margin-bottom: 6px;
+  transition: all 0.8s ease;
+}
+.container-fluid .row .create-photoStory-bg {
+  background-image: url("../images/Main_banner.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 80px;
+  z-index: -1;
+  width: 100%;
+  height: 547px;
+}
+.container-fluid .row .create-photoStory {
+  padding: 20px 160px;
+}
+.container-fluid .row .create-photoStory h1 {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1.32px;
+  font-variant: small-caps;
+}
+.container-fluid .row .create-photoStory p {
+  font-family: "PF Agora Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+.container-fluid .row .create-photoStory button {
+  width: 377px;
+  height: 66px;
+  color: black;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #010101;
+  border-image: initial;
+  font-size: 24px;
+  transition: all 0.4s ease;
+  padding: 0;
+}
+.container-fluid .row .create-photoStory button:hover {
+  color: white;
+  background-color: black;
+}
+.container-fluid .row .step {
+  width: 100%;
+  height: 365px;
+  padding: 90px 206px;
+  margin-top: 309px;
+  display: flex;
+}
+.container-fluid .row .step .step_1, .container-fluid .row .step .step_2, .container-fluid .row .step .step_3 {
+  width: 139px;
+  height: 215px;
+  text-align: center;
+  margin-left: 125px;
+}
+.container-fluid .row .step .step_1 .step-icon, .container-fluid .row .step .step_2 .step-icon, .container-fluid .row .step .step_3 .step-icon {
+  width: 139px;
+  height: 139px;
+  border: 5px solid #ffd200;
+  border-radius: 50%;
+}
+.container-fluid .row .step .step_1 .step-icon:before, .container-fluid .row .step .step_2 .step-icon:before, .container-fluid .row .step .step_3 .step-icon:before {
+  content: "";
+  position: relative;
+  right: -130px;
+  top: 36%;
+  width: 100%;
+  height: 20px;
+  border-bottom: 5px dashed #ffd200;
+  display: inline-block;
+}
+.container-fluid .row .step .step_1 .step-icon img, .container-fluid .row .step .step_2 .step-icon img, .container-fluid .row .step .step_3 .step-icon img {
+  padding: 17% 29%;
+}
+.container-fluid .row .step .step_1 p, .container-fluid .row .step .step_2 p, .container-fluid .row .step .step_3 p {
+  padding: 0 20px;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-weight: 300;
+}
+.container-fluid .row .step .step_4 {
+  width: 139px;
+  height: 215px;
+  text-align: center;
+  margin-left: 125px;
+}
+.container-fluid .row .step .step_4 .step-icon {
+  width: 139px;
+  height: 139px;
+  border: 5px solid #ffd200;
+  border-radius: 50%;
+}
+.container-fluid .row .step .step_4 .step-icon img {
+  padding: 32% 29%;
+}
+.container-fluid .row .step .step_4 p {
+  padding: 0 20px;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-weight: 300;
+}
+.container-fluid .createPhotoStory {
+  background-image: url(../images/Main_banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 550px;
+}
+.container-fluid .createPhotoStory h1 {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1.32px;
+  font-variant: small-caps;
+}
+.container-fluid .createPhotoStory p {
+  font-family: "PF Agora Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+.container-fluid .createPhotoStory button {
+  width: 377px;
+  height: 66px;
+  color: black;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #010101;
+  border-image: initial;
+  font-size: 24px;
+  transition: all 0.4s ease;
+  padding: 0;
+}
+.container-fluid .createPhotoStory button:hover {
+  color: white;
+  background-color: black;
+}
+.container-fluid .icon-cards {
+  padding: 100px 80px;
+}
+.container-fluid .icon-cards .icon {
+  width: 139px;
+  height: 139px;
+  border: 5px solid #ffd200;
+  border-radius: 50%;
+  margin: 0;
+  display: inline-block;
+  padding-top: 30px;
+  transition: all 0.2s ease;
+}
+.container-fluid .icon-cards .icon:hover {
+  box-shadow: 0 0 10px 10px #eaeaea;
+}
+.container-fluid .icon-cards .icon-text p {
+  padding: 0 90px;
+  font-family: "Myriad Pro Regular", sans-serif;
+  font-weight: 300;
+}
+.container-fluid .advantage {
+  padding: 0 120px;
+  background-color: #F3F0E7;
+  height: 850px;
+}
+.container-fluid .advantage .col-12 h1 {
+  padding-top: 45px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1.32px;
+  font-variant: small-caps;
+}
+.container-fluid .advantage .col-12 .make-photostory {
+  width: 377px;
+  height: 66px;
+  background-color: #e11a27;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 59px;
+}
+.container-fluid .advantage .col-12 .make-photostory:hover {
+  background-color: transparent;
+  border: 1px solid #e11a27;
+  color: #e11a27;
+}
+.container-fluid .advantage .col-md-12 {
+  margin-top: 100px;
+}
+.container-fluid .advantage .col-md-12 .col-md-4 h6 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin: 20px 0;
+}
+.container-fluid .advantage .col-md-12 .col-md-4 p {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.container-fluid .ready-solutions {
+  padding: 50px 0;
+  padding-left: 60px;
+}
+.container-fluid .ready-solutions .col-12 {
+  height: 42px;
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1.32px;
+  font-variant: small-caps;
+}
+.container-fluid .ready-solutions .checkbox-card {
+  height: 419px !important;
+  width: 100%;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type {
+  height: 100%;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .bestseller {
+  width: 193px;
+  height: 44px;
+  background-color: #ffd200;
+  margin: 0 auto;
+  text-align: center;
+  transform: translateY(44px);
+  transition: all 0.3s ease;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .bestseller p {
+  font-family: "PF Agora Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  font-size: 16px;
+  letter-spacing: 0.53px;
+  color: #e11a27;
+  font-weight: 700;
+  margin-top: -47px !important;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .bestseller::before, .container-fluid .ready-solutions .checkbox-card .book-type .bestseller::after {
+  content: "";
+  height: 44px;
+  width: 44px;
+  background-color: #ffffff;
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .bestseller::after {
+  transform: rotate(45deg);
+  left: 96px;
+  top: -54px;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .bestseller::before {
+  transform: rotate(45deg);
+  left: -97px;
+  top: -27px;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card {
+  transition: all 0.3s ease;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-header {
+  height: 90px !important;
+  font-family: "Myriad Pro", sans-serif;
+  font-variant: small-caps;
+  font-size: 28px;
+  font-weight: 400;
+  background-color: #ffd200 !important;
+  padding: 27px;
+  border: 0;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-body {
+  border: 3px solid #ffd200;
+  border-bottom: 0;
+  border-top: 0;
+  height: 250px;
+  background-color: #ffffff;
+  border-radius: 0;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-body label {
+  padding-left: 20px;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-body label::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  margin-left: -20px;
+  margin-right: 20px;
+  border: 2px solid;
+  border-radius: 50%;
+  transition: all 0.1s ease;
+  vertical-align: middle;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-body input[type=checkbox] {
+  display: none;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-body input[type=checkbox]:checked + label::before {
+  content: "";
+  text-align: center;
+  border-color: #ffd200;
+  background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGc+Cgk8Zz4KCQk8cGF0aCBkPSJNNTA0LjUwMiw3NS40OTZjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5OC0zNi4yMDQsMEwxNjEuNTk0LDM4Mi4yMDNMNDMuNzAyLDI2NC4zMTFjLTkuOTk3LTkuOTk4LTI2LjIwNS05Ljk5Ny0zNi4yMDQsMCAgICBjLTkuOTk4LDkuOTk3LTkuOTk4LDI2LjIwNSwwLDM2LjIwM2wxMzUuOTk0LDEzNS45OTJjOS45OTQsOS45OTcsMjYuMjE0LDkuOTksMzYuMjA0LDBMNTA0LjUwMiwxMTEuNyAgICBDNTE0LjUsMTAxLjcwMyw1MTQuNDk5LDg1LjQ5NCw1MDQuNTAyLDc1LjQ5NnoiIGZpbGw9IiMwMDAwMDAiLz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: 3px 1px;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-body h1 {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: -1.32px;
+  padding-top: 25px;
+  text-align: center;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-footer {
+  width: 100%;
+  height: 47px;
+  background-color: #ffd200;
+  border: 0;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card .card-footer p {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 19px;
+  font-weight: 400;
+  font-variant: small-caps;
+  letter-spacing: 1.54px;
+  text-align: center;
+}
+.container-fluid .ready-solutions .checkbox-card .book-type .card:hover {
+  box-shadow: 0 20px 10px 10px #cccccc;
+}
+.container-fluid .ready-solutions .checkbox-card:hover .bestseller {
+  transform: translateY(18px);
+}
+.container-fluid .testimonial {
+  background-image: url(../images/banner_2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 767px;
+  padding: 50px 120px;
+}
+.container-fluid .testimonial h1 {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1.32px;
+  font-variant: small-caps;
+}
+.container-fluid .testimonial .user .col-md-9 {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+.container-fluid .testimonial .user .col-md-9 h6 {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 400;
+  font-size: 60px;
+  letter-spacing: 1.32px;
+  font-variant: small-caps;
+  font-size: 30px;
+  letter-spacing: 0.66px;
+}
+.container-fluid .testimonial p {
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-fluid .testimonial .col-12 a {
+  color: #000000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.container-fluid .testimonial .col-12 a span {
+  transform: translateX(-20px);
+  opacity: 0;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.container-fluid .testimonial .col-12 a:hover {
+  text-shadow: 0 0 10px #8d8d8d;
+}
+.container-fluid .testimonial .col-12 a:hover span {
+  opacity: 1;
+  transform: translateX(0);
+}
+.container-fluid .testimonial .col-12 .btn-photostory {
+  width: 377px;
+  height: 66px;
+  color: black;
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #010101;
+  border-image: initial;
+  font-size: 24px;
+  transition: all 0.4s ease;
+  padding: 0;
+  margin: 30px;
+}
+.container-fluid .testimonial .col-12 .btn-photostory:hover {
+  color: white;
+  background-color: black;
+}
+.container-fluid .cards {
+  padding: 50px 110px;
+}
+.container-fluid .cards .card-100 {
+  width: 313px;
+  height: 310px;
+  border: 0;
+  border-radius: 10px;
+}
+.container-fluid .cards .card {
+  transition: all 0.5s ease;
+}
+.container-fluid .cards .card .card_title {
+  width: 100%;
+  height: 65px;
+  text-align: center;
+  background-color: #ffd200;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 0;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid #fff;
+  font-variant: small-caps;
+}
+.container-fluid .cards .card .card_body {
+  height: 100%;
+  background-color: #f7f0e6;
+  border-radius: 0 0 10px 10px;
+  border-top: 2px solid #fff;
+  padding: 20px;
+  color: #000000;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-fluid .cards .card .card_body li {
+  padding: 5px 0;
+}
+.container-fluid .cards .card .card_body .free {
+  display: inline-block;
+  margin-top: 20px;
+  color: #e11a27;
+}
+.container-fluid .cards .card:hover {
+  box-shadow: 0 0 30px 10px #ccc;
+}
+.container-fluid .cards .make-your-photobook {
+  width: 377px;
+  height: 66px;
+  background-color: #e11a27;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 59px;
+  margin-top: 50px;
+}
+.container-fluid .cards .make-your-photobook:hover {
+  background-color: transparent;
+  border: 1px solid #e11a27;
+  color: #e11a27;
+}
+.container-fluid footer {
+  padding: 70px 40px;
+  margin-left: -15px;
+  height: 465px;
+  background-color: #ffd200;
+}
+.container-fluid footer .footer-cards {
+  height: 100%;
+}
+.container-fluid footer .footer-cards .offset-card {
+  margin: 0 100px;
+}
+.container-fluid footer .footer-cards .footer-card {
+  margin-left: 100px;
+  width: 150px;
+  height: 150px;
+}
+.container-fluid footer .footer-cards .footer-card ul {
+  border-top: 1px solid;
+  padding: 20px 0;
+}
+.container-fluid footer .footer-cards .footer-card ul li {
+  padding-bottom: 0;
+  margin: 10px 0;
+  height: 30px;
+  transition: all 0.5s ease;
+}
+.container-fluid footer .footer-cards .footer-card ul li::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: -30px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: #000000;
+  transition: all 0.5s ease;
+}
+.container-fluid footer .footer-cards .footer-card ul li:hover::before {
+  width: 75%;
+}
+.container-fluid footer .footer-cards .footer-card ul a {
+  color: #000000;
+  text-decoration: none;
+  font-family: "Myriad Pro", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container-fluid footer .footer-cards .footer-card .footer-font {
+  font-variant: small-caps;
+}
+.container-fluid footer .footer-cards .footer-card .fa {
+  font-size: 26px;
+}
+.container-fluid footer .footer-cards .footer-card .fa-vimeo-square {
+  margin: 0 16px;
+}
+.container-fluid footer .copyright {
+  width: 100%;
+}
+.container-fluid footer .copyright p {
+  font-family: "Myriad Pro", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+@media (min-width: 320px) and (max-width: 484px) {
+  .container-fluid .row {
+    width: 102%;
+    margin-right: 0 !important;
+    display: inline-block;
+  }
+  .container-fluid .row .change {
+    background-color: #000000;
+    height: 400px;
+    text-align: center;
+  }
+  .container-fluid .row .change .nav-link {
+    color: #ffffff;
+  }
+  .container-fluid .row .change .hamburger-menu .line {
+    background-color: #ffffff;
+  }
+  .container-fluid .row .change .phone {
+    margin: 0 auto !important;
+    display: inline-block;
+  }
+  .container-fluid .row .change .phone, .container-fluid .row .change .sign-in {
+    margin-left: 0;
+  }
+  .container-fluid .row .navbar {
+    padding: 15px 15px 15px 25px;
+    display: inline-block;
+  }
+  .container-fluid .row .navbar .hamburger-menu {
+    margin-right: 30px !important;
+    display: inline-block;
+  }
+  .container-fluid .createPhotoStory h1 {
+    font-size: 36px !important;
+  }
+  .container-fluid .createPhotoStory p {
+    font-size: 18px;
+  }
+  .container-fluid .createPhotoStory button {
+    width: 265px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .container-fluid .icon-cards .icon-text p {
+    padding: 0 55px;
+  }
+  .container-fluid .advantage {
+    height: 1700px;
+    padding: 0 25px;
+  }
+  .container-fluid .advantage .col-12 h1 {
+    font-size: 38px;
+  }
+  .container-fluid .advantage button {
+    width: 269px !important;
+    height: 55px !important;
+    font-size: 18px !important;
+    line-height: 50px !important;
+  }
+  .container-fluid .ready-solutions {
+    padding: 50px 0;
+  }
+  .container-fluid .ready-solutions .col-12 h1 {
+    font-size: 34px;
+  }
+  .container-fluid .ready-solutions .col-md-4 .card-body h1 {
+    font-size: 34px !important;
+  }
+  .container-fluid .ready-solutions .col-md-4 .book-type .card-footer p {
+    font-size: 18px !important;
+  }
+  .container-fluid .testimonial {
+    padding: 50px 10px;
+  }
+  .container-fluid .testimonial h1 {
+    font-size: 38px;
+  }
+  .container-fluid .testimonial .col-md-6 {
+    padding: 0;
+  }
+  .container-fluid .testimonial .col-md-6 .user .col-md-9 {
+    margin-left: 10px;
+    padding-top: 12px;
+    padding-left: 0;
+  }
+  .container-fluid .testimonial .col-12 .btn-photostory {
+    width: 290px;
+    height: 45px;
+    margin: 20px 0 0 0;
+  }
+  .container-fluid .cards {
+    padding: 50px 0;
+  }
+  .container-fluid .cards .col-md-4 {
+    margin-top: 50px;
+  }
+  .container-fluid .cards .make-your-photobook {
+    width: 320px;
+    height: 66px;
+  }
+  .container-fluid footer {
+    height: 950px;
+  }
+  .container-fluid footer .footer-cards .footer-card {
+    margin-top: 70px;
+    margin-left: 0 !important;
+  }
+  .container-fluid footer .copyright {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 485px) and (max-width: 767px) {
+  .container-fluid .row {
+    width: 102%;
+    margin-right: 0 !important;
+    display: inline-block;
+  }
+  .container-fluid .row .change {
+    background-color: #000000;
+    height: 400px;
+  }
+  .container-fluid .row .change .nav-link {
+    color: #ffffff;
+    text-align: center;
+  }
+  .container-fluid .row .change .hamburger-menu .line {
+    background-color: #ffffff;
+  }
+  .container-fluid .row .change .phone {
+    margin: 0 auto !important;
+    display: inline-block;
+  }
+  .container-fluid .row .change .phone, .container-fluid .row .change .sign-in {
+    margin-left: 0;
+  }
+  .container-fluid .row .navbar {
+    padding: 15px 15px 15px 25px;
+    display: inline-block;
+  }
+  .container-fluid .row .navbar .hamburger-menu {
+    margin-right: 30px !important;
+    display: inline-block;
+  }
+  .container-fluid .createPhotoStory .col-12 h1 {
+    font-size: 38px;
+  }
+  .container-fluid .createPhotoStory button {
+    width: 325px;
+    height: 65px;
+    font-size: 16px;
+  }
+  .container-fluid .icon-cards .icon-text p {
+    padding: 0 55px;
+  }
+  .container-fluid .advantage {
+    height: 1700px;
+    padding: 0 25px;
+  }
+  .container-fluid .advantage .col-12 h1 {
+    font-size: 40px !important;
+  }
+  .container-fluid .advantage button {
+    width: 269px !important;
+    height: 55px !important;
+    font-size: 18px !important;
+    line-height: 50px !important;
+  }
+  .container-fluid .ready-solutions {
+    padding: 50px 30px;
+  }
+  .container-fluid .ready-solutions .col-12 h1 {
+    height: 42px;
+    font-family: "Myriad Pro", sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    font-variant: small-caps;
+  }
+  .container-fluid .ready-solutions .col-md-4 .card-body h1 {
+    font-size: 34px !important;
+  }
+  .container-fluid .ready-solutions .col-md-4 .book-type .card-footer p {
+    font-size: 18px !important;
+  }
+  .container-fluid .testimonial {
+    padding: 50px 10px;
+  }
+  .container-fluid .testimonial h1 {
+    font-size: 38px;
+  }
+  .container-fluid .testimonial .col-md-6 {
+    padding: 0;
+  }
+  .container-fluid .testimonial .col-md-6 .user .col-md-9 {
+    margin-left: 10px;
+    padding-top: 12px;
+    padding-left: 0;
+  }
+  .container-fluid .cards {
+    padding: 50px 50px;
+  }
+  .container-fluid .cards .card-100 {
+    margin: 0 auto;
+  }
+  .container-fluid .cards .col-md-4 {
+    margin-top: 50px;
+  }
+  .container-fluid .cards .make-your-photobook {
+    width: 320px;
+    height: 66px;
+  }
+  .container-fluid footer {
+    height: 1000px;
+  }
+  .container-fluid footer .footer-card {
+    margin-top: 70px;
+  }
+  .container-fluid footer .copyright {
+    margin-top: 120px;
+  }
+}
+@media (min-width: 768px) and (max-width: 993px) {
+  .container-fluid .row {
+    width: 101%;
+  }
+  .container-fluid .row .change {
+    background-color: #000000;
+    height: 400px;
+  }
+  .container-fluid .row .change .nav-link {
+    color: #ffffff;
+  }
+  .container-fluid .row .change .hamburger-menu .line {
+    background-color: #ffffff;
+  }
+  .container-fluid .row .change .phone, .container-fluid .row .change .sign-in {
+    margin-left: 0;
+  }
+  .container-fluid .row .navbar {
+    padding: 15px 15px 15px 25px;
+    display: inline-block;
+  }
+  .container-fluid .row .navbar .hamburger-menu {
+    margin-right: 30px !important;
+    display: inline-block;
+  }
+  .container-fluid .icon-cards .icon-text p {
+    padding: 0 55px;
+  }
+  .container-fluid .advantage {
+    height: 900px;
+    padding: 50px 0;
+  }
+  .container-fluid .advantage .col-12 {
+    height: 80px;
+  }
+  .container-fluid .advantage .col-12 .h1 {
+    font-size: 34px;
+    height: 150px;
+    padding-top: 0 !important;
+  }
+  .container-fluid .ready-solutions {
+    padding: 50px 30px;
+  }
+  .container-fluid .ready-solutions .col-12 h1 {
+    font-size: 34px;
+  }
+  .container-fluid .ready-solutions .checkbox-card {
+    width: 50%;
+    display: inline;
+  }
+  .container-fluid .ready-solutions .col-md-4 .card-body h1 {
+    font-size: 34px !important;
+  }
+  .container-fluid .ready-solutions .col-md-4 .book-type {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .container-fluid .ready-solutions .col-md-4 .book-type .card-footer p {
+    font-size: 18px !important;
+  }
+  .container-fluid .testimonial {
+    padding: 50px 0;
+  }
+  .container-fluid .cards {
+    padding: 50px 0;
+    width: 100%;
+    display: inline-block;
+  }
+  .container-fluid .cards .card-100 {
+    margin: 50px 0 !important;
+    display: inline !important;
+  }
+  .container-fluid .cards .card-100 .card_title {
+    font-size: 32px;
+  }
+  .container-fluid .cards .card-100 .card_body {
+    height: 300px;
+  }
+  .container-fluid .cards .make-your-photobook {
+    width: 300px;
+    height: 65px;
+    padding: 0;
+    font-size: 18px;
+  }
+  .container-fluid footer {
+    height: 950px;
+    padding: 50px 0;
+    width: 100%;
+    display: inline-block;
+  }
+  .container-fluid footer .footer-cards {
+    height: 90%;
+  }
+  .container-fluid footer .footer-cards .footer-card {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 994px) and (max-width: 1300px) {
+  .container-fluid button {
+    width: 300px !important;
+    height: 55px !important;
+    font-size: 20px !important;
+  }
+  .container-fluid .row .navbar {
+    padding: 20px 100px;
+    width: 100% !important;
+  }
+  .container-fluid .row .navbar .nav-link {
+    font-size: 14px;
+  }
+  .container-fluid .row .navbars {
+    transform: translateX(-150px);
+  }
+  .container-fluid .createPhotoStory .col-12 h1 {
+    font-size: 50px;
+  }
+  .container-fluid .createPhotoStory .col-12 p {
+    font-size: 20px;
+  }
+  .container-fluid .createPhotoStory .col-12 button {
+    width: 300px !important;
+    height: 55px !important;
+    font-size: 20px !important;
+  }
+  .container-fluid .advantage {
+    height: 900px;
+  }
+  .container-fluid .advantage .col-12 h1 {
+    font-size: 50px;
+  }
+  .container-fluid .advantage .col-12 .make-photostory {
+    line-height: 45px;
+  }
+  .container-fluid .testimonial h1 {
+    font-size: 50px;
+  }
+  .container-fluid .testimonial .col-md-9 {
+    margin-left: 30px;
+  }
+  .container-fluid .cards {
+    padding: 50px 0;
+    width: 100%;
+    display: inline-block;
+  }
+  .container-fluid .cards .card-100 {
+    margin: 50px 0 !important;
+    display: inline !important;
+  }
+  .container-fluid .cards .card-100 .card_title {
+    font-size: 32px;
+  }
+  .container-fluid .cards .card-100 .card_body {
+    height: 270px !important;
+  }
+  .container-fluid .cards .make-your-photobook {
+    width: 300px;
+    height: 65px;
+    padding: 0;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
